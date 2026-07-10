@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Schedule Your Visit</title>
-
-<link rel="stylesheet" href="https://booking.tekmetric.com/iframe/modal.css">
-
-<script src="https://booking.tekmetric.com/iframe/modal.js"></script>
-
 <script>
 window.onload = function () {
-onShowBooking('d9ed5744-f622-4427-afc8-6aa4b4c11ede');
+const script = document.createElement("script");
+script.src = "https://booking.tekmetric.com/iframe/modal.js";
+
+script.onload = function () {
+onShowBooking("d9ed5744-f622-4427-afc8-6aa4b4c11ede");
+};
+
+document.body.appendChild(script);
+
+const css = document.createElement("link");
+css.rel = "stylesheet";
+css.href = "https://booking.tekmetric.com/iframe/modal.css";
+document.head.appendChild(css);
 };
 </script>
-
-<style>
-body{
-margin:0;
-background:white;
-}
-</style>
-</head>
-
-<body>
-</body>
-</html>
